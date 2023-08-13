@@ -18,7 +18,7 @@ jobs:
       PORT: 3001
       PLT_SERVER_LOGGER_LEVEL: debug
       PLT_CORS_ORIGIN: https://platformatic.cloud
-      DATABASE_URL: sqlite://./db.sqlite
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
       PLT_DEV_MODE: true
       BASE_URL: POLLING
       BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
