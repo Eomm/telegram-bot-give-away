@@ -1,31 +1,26 @@
 name: Deploy Platformatic application to the cloud
 on:
-  push:
-    branches:
-      - main
+  pull_request:
     paths-ignore:
       - 'docs/**'
       - '**.md'
-
-env:
-  PROD_URL: ${{ secrets.PROD_URL }}
 
 jobs:
   build_and_deploy:
     permissions:
       contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     environment:
-      name: production
-      url: ${{ env.PROD_URL }}
+      name: staging
     env:
       PLT_SERVER_HOSTNAME: 127.0.0.1
       PORT: 3001
-      PLT_SERVER_LOGGER_LEVEL: info
+      PLT_SERVER_LOGGER_LEVEL: debug
       PLT_CORS_ORIGIN: https://platformatic.cloud
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      DEPLOY_SERVICE_HOST: https://plt-production-deploy-service.fly.dev
-      PLT_BASE_URL: ${{ secrets.PROD_URL }}
+      PLT_DEV_MODE: true
+      PLT_BASE_URL: POLLING
       PLT_BOT_TOKEN: ${{ secrets.PLT_BOT_TOKEN }}
 
     steps:
@@ -37,6 +32,6 @@ jobs:
         uses: platformatic/onestep@latest
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          platformatic_workspace_id: ${{ secrets.PLATFORMATIC_STATIC_WORKSPACE_ID }}
-          platformatic_workspace_key: ${{ secrets.PLATFORMATIC_STATIC_WORKSPACE_API_KEY }}
-          platformatic_config_path: ./platformatic.db.json
+          platformatic_workspace_id: ${{ secrets.PLATFORMATIC_DYNAMIC_WORKSPACE_ID }}
+          platformatic_workspace_key: ${{ secrets.PLATFORMATIC_DYNAMIC_WORKSPACE_API_KEY }}
+          platformatic_config_path: platformatic.db.json

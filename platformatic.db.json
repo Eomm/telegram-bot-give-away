@@ -5,6 +5,15 @@
     "port": "{PORT}",
     "logger": {
       "level": "{PLT_SERVER_LOGGER_LEVEL}"
+    },
+    "cors": {
+      "origin": "{PLT_CORS_ORIGIN}",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
     }
   },
   "db": {
@@ -12,6 +21,7 @@
     "graphql": true,
     "openapi": true
   },
+  "dashboard": false,
   "watch": {
     "ignore": [
       "*.sqlite",
@@ -24,7 +34,8 @@
   },
   "plugins": {
     "paths": [
-      "plugin.js"
+      "plugin-root.js",
+      "plugin-telegram.js"
     ]
   },
   "types": {

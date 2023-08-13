@@ -1,14 +1,37 @@
 {
+  "name": "telegram-bot-give-away",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "start:db": "./bin/start-db.sh",
+    "stop:db": "./bin/stop-db.sh",
     "start": "platformatic start"
   },
   "devDependencies": {
-    "fastify": "^4.21.0"
+    "fastify": "^4.21.0",
+    "standard": "^17.1.0"
   },
   "dependencies": {
-    "platformatic": "^0.34.0"
+    "@fastify/env": "^4.2.0",
+    "fastify-plugin": "^4.5.1",
+    "i18n": "^0.15.1",
+    "lodash.samplesize": "^4.2.0",
+    "platformatic": "^0.34.0",
+    "telegraf": "^4.12.2"
   },
   "engines": {
     "node": "^18.8.0"
-  }
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "giveaway",
+    "platformatic",
+    "fastify"
+  ],
+  "author": "Manuel Spigolon <behemoth89@gmail.com> (https://github.com/Eomm)",
+  "license": "MIT"
 }

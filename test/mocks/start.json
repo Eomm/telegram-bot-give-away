@@ -1,0 +1,30 @@
+{
+  "update_id": 112297375,
+  "message": {
+    "message_id": 1,
+    "from": {
+      "id": 28312570,
+      "is_bot": false,
+      "first_name": "Manuel",
+      "last_name": "Spigolon",
+      "username": "manueomm",
+      "language_code": "it"
+    },
+    "chat": {
+      "id": 28312570,
+      "first_name": "Manuel",
+      "last_name": "Spigolon",
+      "username": "manueomm",
+      "type": "private"
+    },
+    "date": 1691521208,
+    "text": "/start",
+    "entities": [
+      {
+        "offset": 0,
+        "length": 6,
+        "type": "bot_command"
+      }
+    ]
+  }
+}
