@@ -8,7 +8,7 @@ const buildGiveAwayBot = require('./lib/give-away-bot')
 module.exports = async function (app) {
   app.register(i18nPlugin)
 
-  const webhookDomain = app.appConfig.BASE_URL
+  const webhookDomain = app.appConfig.PLT_BASE_URL
 
   const bot = buildGiveAwayBot(app)
 

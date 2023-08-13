@@ -25,8 +25,8 @@ jobs:
       PLT_CORS_ORIGIN: https://platformatic.cloud
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       DEPLOY_SERVICE_HOST: https://plt-production-deploy-service.fly.dev
-      BASE_URL: ${{ secrets.PROD_URL }}
-      BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+      PLT_BASE_URL: ${{ secrets.PROD_URL }}
+      PLT_BOT_TOKEN: ${{ secrets.PLT_BOT_TOKEN }}
 
     steps:
       - name: Checkout application project repository
