@@ -25,7 +25,11 @@ module.exports = async function (app) {
   }
 
   // Webhook mode
-  const webhook = await bot.createWebhook({ domain: webhookDomain })
+  const webhook = await bot.createWebhook({
+    domain: webhookDomain,
+    secret_token: app.appConfig.PLT_JWT_SECRET
+  })
+
   const routePath = `/telegraf/${bot.secretPathComponent()}`
   app.log.info({ webhookRoutePath: routePath }, `Telegram webhook path: ${routePath}`)
 

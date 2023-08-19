@@ -28,6 +28,7 @@ jobs:
       DEPLOY_SERVICE_HOST: https://plt-production-deploy-service.fly.dev
       PLT_BASE_URL: ${{ secrets.PROD_URL }}
       PLT_BOT_TOKEN: ${{ secrets.PLT_BOT_TOKEN }}
+      PLT_JWT_SECRET: ${{ secrets.PLT_JWT_SECRET }}
 
     steps:
       - name: Checkout application project repository

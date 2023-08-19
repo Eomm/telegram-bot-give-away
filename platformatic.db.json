@@ -16,9 +16,27 @@
       ]
     }
   },
+  "authorization": {
+    "rules": [
+      {
+        "role": "anonymous",
+        "entities": [
+          "user",
+          "event",
+          "usersEvent"
+        ],
+        "find": false,
+        "save": false,
+        "delete": false
+      }
+    ],
+    "jwt": {
+      "secret": "{PLT_JWT_SECRET}"
+    }
+  },
   "db": {
     "connectionString": "{DATABASE_URL}",
-    "graphql": true,
+    "graphql": false,
     "openapi": true
   },
   "dashboard": false,

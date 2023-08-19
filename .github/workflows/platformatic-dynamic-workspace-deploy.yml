@@ -22,6 +22,7 @@ jobs:
       PLT_DEV_MODE: true
       PLT_BASE_URL: POLLING
       PLT_BOT_TOKEN: ${{ secrets.PLT_BOT_TOKEN }}
+      PLT_JWT_SECRET: ${{ secrets.PLT_JWT_SECRET }}
 
     steps:
       - name: Checkout application project repository

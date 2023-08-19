@@ -11,10 +11,11 @@ module.exports = fp(async function (app) {
     dotenv: true,
     schema: {
       type: 'object',
-      required: ['PLT_BASE_URL', 'PLT_BOT_TOKEN'],
+      required: ['PLT_BASE_URL', 'PLT_BOT_TOKEN', 'PLT_JWT_SECRET'],
       properties: {
         PLT_BASE_URL: { type: 'string' },
-        PLT_BOT_TOKEN: { type: 'string' }
+        PLT_BOT_TOKEN: { type: 'string' },
+        PLT_JWT_SECRET: { type: 'string' }
       }
     }
   })

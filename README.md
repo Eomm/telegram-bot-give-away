@@ -24,6 +24,11 @@ Open a new chat with [@eommGiveAwayBot](https://t.me/eommGiveAwayBot) and follow
 - The Postgres database is hosted on [filess.io](https://www.filess.io/).
 - The avatar of the bot is created using [Leonardo.AI](https://leonardo.ai/).
 
+## Development
+
+To run it locally you need to create a `.env` file with the variables listed in `.env.sample`.
+Then you can setup the polling mode or the webhook mode with `ngrok http 3001`.
+
 ## License
 
 Copyright [Manuel Spigolon](https://github.com/Eomm), Licensed under [MIT](./LICENSE).
