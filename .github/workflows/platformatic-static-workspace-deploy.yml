@@ -6,6 +6,7 @@ on:
     paths-ignore:
       - 'docs/**'
       - '**.md'
+  workflow_dispatch: 
 
 env:
   PROD_URL: ${{ secrets.PROD_URL }}
