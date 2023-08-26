@@ -37,7 +37,13 @@
   "db": {
     "connectionString": "{DATABASE_URL}",
     "graphql": false,
-    "openapi": true
+    "openapi": {
+      "ignore": {
+        "users": true,
+        "usersEvents": true
+      }
+    },
+    "events": false
   },
   "dashboard": false,
   "watch": {
