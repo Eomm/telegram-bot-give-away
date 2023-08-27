@@ -36,6 +36,7 @@
   },
   "db": {
     "connectionString": "{DATABASE_URL}",
+    "poolSize": 5,
     "graphql": false,
     "openapi": {
       "ignore": {
