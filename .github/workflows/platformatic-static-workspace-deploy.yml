@@ -29,6 +29,7 @@ jobs:
       PLT_BASE_URL: ${{ secrets.PROD_URL }}
       PLT_BOT_TOKEN: ${{ secrets.PLT_BOT_TOKEN }}
       PLT_JWT_SECRET: ${{ secrets.PLT_JWT_SECRET }}
+      PLT_BETTERSTACK_API_KEY: ${{ secrets.BETTERSTACK_API_KEY }}
 
     steps:
       - name: Checkout application project repository
@@ -36,7 +37,7 @@ jobs:
       - name: npm install --omit=dev
         run: npm install --omit=dev
       - name: Deploy project
-        uses: platformatic/onestep@latest
+        uses: platformatic/onestep@85911c6d508df1e96437f814e0a854010d55f11d
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           platformatic_workspace_id: ${{ secrets.PLATFORMATIC_STATIC_WORKSPACE_ID }}

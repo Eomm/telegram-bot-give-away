@@ -60,7 +60,8 @@
   "plugins": {
     "paths": [
       "plugin-root.js",
-      "plugin-telegram.js"
+      "plugin-telegram.js",
+      "plugin-keep-alive.js"
     ]
   },
   "types": {
