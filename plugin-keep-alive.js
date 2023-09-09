@@ -6,6 +6,11 @@ const fastifyInvincible = require('fastify-invincible')
 
 /** @param {import('fastify').FastifyInstance} app */
 module.exports = fp(async function (app) {
+  if (app.appConfig.PLT_BASE_URL === 'POLLING') {
+    app.log.warn('Polling mode enabled, skipping keep-alive plugin')
+    return
+  }
+
   const pollingUrl = new URL(app.appConfig.PLT_BASE_URL)
   pollingUrl.pathname = '/monitoring'
 
