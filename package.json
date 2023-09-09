@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@fastify/env": "^4.2.0",
+    "fastify-invincible": "^0.1.0",
     "fastify-plugin": "^4.5.1",
     "i18n": "^0.15.1",
     "lodash.samplesize": "^4.2.0",
