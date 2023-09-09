@@ -37,7 +37,7 @@ jobs:
       - name: npm install --omit=dev
         run: npm install --omit=dev
       - name: Deploy project
-        uses: platformatic/onestep@latest
+        uses: platformatic/onestep@f4b19b11c589d462b1712be730aae107c7688fbe
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           platformatic_workspace_id: ${{ secrets.PLATFORMATIC_STATIC_WORKSPACE_ID }}
