@@ -46,7 +46,6 @@
     },
     "events": false
   },
-  "dashboard": false,
   "watch": {
     "ignore": [
       "*.sqlite",
