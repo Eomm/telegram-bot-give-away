@@ -1,0 +1,47 @@
+<mxfile host="65bd71144e">
+    <diagram id="rTSgRM5asducNh4tFDxX" name="Page-1">
+        <mxGraphModel dx="1274" dy="862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="11" style="edgeStyle=entityRelationEdgeStyle;html=1;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fontSize=18;" edge="1" parent="1" source="3" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Messages" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="11">
+                    <mxGeometry x="0.0541" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="Telegram" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="390" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;strokeWidth=3;" edge="1" parent="1" source="6" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Platformatic DB" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="400" width="210" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=entityRelationEdgeStyle;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=3;fontSize=18;" edge="1" parent="1" source="5" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Hook URL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="9">
+                    <mxGeometry x="0.1014" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="Fastify Plugin" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="440" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Telegraf&lt;br style=&quot;font-size: 15px;&quot;&gt;Bot" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="480" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="PostgreSQL&lt;br style=&quot;font-size: 16px;&quot;&gt;filess.io" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="-120" y="445" width="90" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;shape=mxgraph.azure.service_endpoint;fontSize=18;fillColor=#000000;rotation=-180;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="500" width="50" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
