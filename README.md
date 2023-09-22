@@ -33,4 +33,4 @@ Then you can setup the polling mode or the webhook mode with `ngrok http 3001`.
 
 ## License
 
-Licensed under [MIT](./LICENSE).
+Copyright [Manuel Spigolon](https://github.com/Eomm), Licensed under [MIT](./LICENSE).

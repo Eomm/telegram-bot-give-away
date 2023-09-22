@@ -34,7 +34,7 @@ module.exports = async function (app) {
   app.log.info({ webhookRoutePath: routePath }, `Telegram webhook path: ${routePath}`)
 
   app.post(routePath, async (request, reply) => {
-    request.log.info('Telegram webhook request')
+    request.log.info('Telegram webhook incoming request')
     reply.hijack()
 
     request.raw.body = request.body
