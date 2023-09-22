@@ -1,8 +1,8 @@
 CREATE TYPE user_role AS ENUM ('user', 'creator');
 
 CREATE TABLE users (
-  id INTEGER PRIMARY KEY,
-  chat_id INTEGER UNIQUE NOT NULL,
+  id VARCHAR(50) PRIMARY KEY,
+  chat_id VARCHAR(50) UNIQUE NOT NULL,
   username VARCHAR(255) NOT NULL,
   lang CHAR(2) NOT NULL DEFAULT 'en',
   role user_role NOT NULL DEFAULT 'user',
@@ -19,14 +19,14 @@ CREATE TABLE events (
   description TEXT NOT NULL,
   prize TEXT NOT NULL,
   required_winners SMALLINT CHECK (required_winners >= 0) NOT NULL,
-  created_by INTEGER REFERENCES users(id),
+  created_by VARCHAR(50) REFERENCES users(id),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   ended_at TIMESTAMP WITH TIME ZONE
 );
 
 CREATE TABLE users_events (
-  user_id INTEGER REFERENCES users(id),
+  user_id VARCHAR(50) REFERENCES users(id),
   event_id INTEGER REFERENCES events(id),
   is_winner BOOLEAN,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

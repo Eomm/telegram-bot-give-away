@@ -2,6 +2,7 @@
   "$schema": "https://platformatic.dev/schemas/v0.34.0/db",
   "server": {
     "hostname": "{PLT_SERVER_HOSTNAME}",
+    "pluginTimeout": 40000,
     "port": "{PORT}",
     "logger": {
       "level": "{PLT_SERVER_LOGGER_LEVEL}"

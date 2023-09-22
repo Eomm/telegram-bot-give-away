@@ -1,0 +1,491 @@
+[
+  {
+    "schema": "public",
+    "table": "users_events",
+    "constraints": [
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "users_events_pkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "users_events",
+        "constraint_type": "PRIMARY KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "user_id",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": null,
+        "foreign_table_name": "users_events",
+        "foreign_column_name": "user_id",
+        "foreign_table_schema": "public"
+      },
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "users_events_pkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "users_events",
+        "constraint_type": "PRIMARY KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "user_id",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": null,
+        "foreign_table_name": "users_events",
+        "foreign_column_name": "event_id",
+        "foreign_table_schema": "public"
+      },
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "users_events_pkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "users_events",
+        "constraint_type": "PRIMARY KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "event_id",
+        "ordinal_position": 2,
+        "position_in_unique_constraint": null,
+        "foreign_table_name": "users_events",
+        "foreign_column_name": "user_id",
+        "foreign_table_schema": "public"
+      },
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "users_events_pkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "users_events",
+        "constraint_type": "PRIMARY KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "event_id",
+        "ordinal_position": 2,
+        "position_in_unique_constraint": null,
+        "foreign_table_name": "users_events",
+        "foreign_column_name": "event_id",
+        "foreign_table_schema": "public"
+      },
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "users_events_user_id_fkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "users_events",
+        "constraint_type": "FOREIGN KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "user_id",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": 1,
+        "foreign_table_name": "users",
+        "foreign_column_name": "id",
+        "foreign_table_schema": "public",
+        "loweredTableWithSchemaName": "usersEvents",
+        "foreignEntityName": "user",
+        "entityName": "usersEvent"
+      },
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "users_events_event_id_fkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "users_events",
+        "constraint_type": "FOREIGN KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "event_id",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": 1,
+        "foreign_table_name": "events",
+        "foreign_column_name": "id",
+        "foreign_table_schema": "public",
+        "loweredTableWithSchemaName": "usersEvents",
+        "foreignEntityName": "event",
+        "entityName": "usersEvent"
+      }
+    ],
+    "columns": [
+      {
+        "column_name": "user_id",
+        "udt_name": "int4",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "integer",
+        "isArray": false
+      },
+      {
+        "column_name": "event_id",
+        "udt_name": "int4",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "integer",
+        "isArray": false
+      },
+      {
+        "column_name": "is_winner",
+        "udt_name": "bool",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "boolean",
+        "isArray": false
+      },
+      {
+        "column_name": "created_at",
+        "udt_name": "timestamp",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "timestamp without time zone",
+        "isArray": false
+      }
+    ]
+  },
+  {
+    "schema": "public",
+    "table": "versions",
+    "constraints": [
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "versions_pkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "versions",
+        "constraint_type": "PRIMARY KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "version",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": null,
+        "foreign_table_name": "versions",
+        "foreign_column_name": "version",
+        "foreign_table_schema": "public"
+      }
+    ],
+    "columns": [
+      {
+        "column_name": "version",
+        "udt_name": "int8",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "bigint",
+        "isArray": false
+      },
+      {
+        "column_name": "name",
+        "udt_name": "text",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "text",
+        "isArray": false
+      },
+      {
+        "column_name": "md5",
+        "udt_name": "text",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "text",
+        "isArray": false
+      },
+      {
+        "column_name": "run_at",
+        "udt_name": "timestamptz",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "timestamp with time zone",
+        "isArray": false
+      }
+    ]
+  },
+  {
+    "schema": "public",
+    "table": "users",
+    "constraints": [
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "users_pkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "users",
+        "constraint_type": "PRIMARY KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "id",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": null,
+        "foreign_table_name": "users",
+        "foreign_column_name": "id",
+        "foreign_table_schema": "public"
+      },
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "users_chat_id_key",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "users",
+        "constraint_type": "UNIQUE",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": "YES",
+        "column_name": "chat_id",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": null,
+        "foreign_table_name": "users",
+        "foreign_column_name": "chat_id",
+        "foreign_table_schema": "public"
+      }
+    ],
+    "columns": [
+      {
+        "column_name": "id",
+        "udt_name": "int4",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "integer",
+        "isArray": false
+      },
+      {
+        "column_name": "chat_id",
+        "udt_name": "int4",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "integer",
+        "isArray": false
+      },
+      {
+        "column_name": "username",
+        "udt_name": "varchar",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "character varying",
+        "isArray": false
+      },
+      {
+        "column_name": "lang",
+        "udt_name": "bpchar",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "character",
+        "isArray": false
+      },
+      {
+        "column_name": "role",
+        "udt_name": "user_role",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "USER-DEFINED",
+        "isArray": false,
+        "enum": [
+          "user",
+          "creator"
+        ]
+      },
+      {
+        "column_name": "current_action",
+        "udt_name": "varchar",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "character varying",
+        "isArray": false
+      },
+      {
+        "column_name": "current_action_data",
+        "udt_name": "jsonb",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "jsonb",
+        "isArray": false
+      },
+      {
+        "column_name": "created_at",
+        "udt_name": "timestamp",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "timestamp without time zone",
+        "isArray": false
+      },
+      {
+        "column_name": "updated_at",
+        "udt_name": "timestamp",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "timestamp without time zone",
+        "isArray": false
+      }
+    ]
+  },
+  {
+    "schema": "public",
+    "table": "events",
+    "constraints": [
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "events_pkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "events",
+        "constraint_type": "PRIMARY KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "id",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": null,
+        "foreign_table_name": "events",
+        "foreign_column_name": "id",
+        "foreign_table_schema": "public"
+      },
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "events_code_key",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "events",
+        "constraint_type": "UNIQUE",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": "YES",
+        "column_name": "code",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": null,
+        "foreign_table_name": "events",
+        "foreign_column_name": "code",
+        "foreign_table_schema": "public"
+      },
+      {
+        "constraint_catalog": "neondb",
+        "constraint_schema": "public",
+        "constraint_name": "events_created_by_fkey",
+        "table_catalog": "neondb",
+        "table_schema": "public",
+        "table_name": "events",
+        "constraint_type": "FOREIGN KEY",
+        "is_deferrable": "NO",
+        "initially_deferred": "NO",
+        "enforced": "YES",
+        "nulls_distinct": null,
+        "column_name": "created_by",
+        "ordinal_position": 1,
+        "position_in_unique_constraint": 1,
+        "foreign_table_name": "users",
+        "foreign_column_name": "id",
+        "foreign_table_schema": "public",
+        "loweredTableWithSchemaName": "events",
+        "foreignEntityName": "user",
+        "entityName": "event"
+      }
+    ],
+    "columns": [
+      {
+        "column_name": "id",
+        "udt_name": "int4",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "integer",
+        "isArray": false
+      },
+      {
+        "column_name": "code",
+        "udt_name": "varchar",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "character varying",
+        "isArray": false
+      },
+      {
+        "column_name": "name",
+        "udt_name": "varchar",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "character varying",
+        "isArray": false
+      },
+      {
+        "column_name": "description",
+        "udt_name": "text",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "text",
+        "isArray": false
+      },
+      {
+        "column_name": "prize",
+        "udt_name": "text",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "text",
+        "isArray": false
+      },
+      {
+        "column_name": "required_winners",
+        "udt_name": "int2",
+        "is_nullable": "NO",
+        "is_generated": "NEVER",
+        "data_type": "smallint",
+        "isArray": false
+      },
+      {
+        "column_name": "created_by",
+        "udt_name": "int4",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "integer",
+        "isArray": false
+      },
+      {
+        "column_name": "created_at",
+        "udt_name": "timestamp",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "timestamp without time zone",
+        "isArray": false
+      },
+      {
+        "column_name": "updated_at",
+        "udt_name": "timestamp",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "timestamp without time zone",
+        "isArray": false
+      },
+      {
+        "column_name": "ended_at",
+        "udt_name": "timestamptz",
+        "is_nullable": "YES",
+        "is_generated": "NEVER",
+        "data_type": "timestamp with time zone",
+        "isArray": false
+      }
+    ]
+  }
+]

@@ -1,3 +1,4 @@
-DROP TABLE IF EXISTS `users_events`;
-DROP TABLE IF EXISTS `events`;
-DROP TABLE IF EXISTS `users`;
+DROP TABLE IF EXISTS users_events;
+DROP TABLE IF EXISTS events;
+DROP TABLE IF EXISTS users;
+DROP TYPE IF EXISTS user_role;
