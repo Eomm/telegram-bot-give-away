@@ -35,6 +35,7 @@
     }
   },
   "db": {
+    "schemalock": true,
     "connectionString": "{DATABASE_URL}",
     "poolSize": 5,
     "graphql": false,
